@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <article>
+        <h1>Frontend is interesting</h1>
+        <div>
+            <img id="like_icon" class="like_icon" src="https://pngimg.com/uploads/like/like_PNG10.png" alt="">
+          
+          <span id="like_count">0</span>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quos unde dignissimos, ad error illum labore quas perferendis officia fugiat reiciendis voluptatibus enim, aliquam eos nobis sit illo placeat. Qui.</p>
+      <img class="article-img" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odit quasi fugiat deleniti voluptatibus, odio quidem fugit! Ex ipsa, voluptas quae asperiores in nihil! Asperiores odit ipsum maiores culpa et!
+        Tempora minus repellat vero quaerat accusamus minima laborum esse non atque debitis assumenda qui, nostrum, culpa similique in quae illum dolorum? Architecto numquam quibusdam, hic totam animi quaerat. Neque, nihil.
+        Odio eius velit ipsum nesciunt quis omnis, neque ea officia asperiores, magni repellat dolore voluptatibus a, aliquam consectetur vero quasi doloribus explicabo. Laboriosam impedit explicabo neque distinctio aperiam architecto molestias!
+        Nesciunt cum dicta quisquam temporibus porro dignissimos illo cumque ducimus, eveniet odio autem cupiditate atque amet, placeat, fuga et possimus voluptatem itaque perferendis debitis! Placeat, consequuntur! Illum laudantium porro odio.
+        Quis dicta impedit explicabo atque temporibus minima necessitatibus ducimus, magni velit non laudantium, nemo deleniti culpa magnam ea, hic dignissimos! Praesentium accusamus voluptas inventore esse iure exercitationem placeat mollitia error!
+        Reprehenderit rerum doloremque eveniet, voluptates illum voluptatum sequi saepe iure dolorum tenetur quis libero obcaecati consequatur, exercitationem eligendi accusantium ullam assumenda unde possimus. Earum veritatis nisi nulla libero cupiditate dolor?
+        Quos cum temporibus, nam optio dicta saepe velit, aperiam deleniti consequatur dignissimos perspiciatis veritatis quas possimus voluptates iste alias neque nulla labore a? Facere reprehenderit culpa quae nam iure ratione!
+        Repudiandae itaque eos expedita tempore autem, soluta sunt id dolorum perferendis similique cum ipsum incidunt assumenda excepturi. Aperiam debitis expedita officiis tempora dolorem consequatur perspiciatis assumenda officia! Dicta, eos voluptate!
+        Praesentium alias, omnis quis maxime sequi quidem numquam vitae beatae quisquam nostrum enim totam minima magni laboriosam vel! Quaerat ullam nemo dicta distinctio rerum! Delectus labore ducimus similique officiis vel.
+        Sint ullam incidunt veritatis hic iste consequatur doloremque, nam, est odit consequuntur reprehenderit, nesciunt aut enim modi earum. Excepturi ad odit ab perspiciatis expedita deserunt cum eaque animi veritatis voluptas.</p>
+      </article>
+
+</body>
+
+<style>
+    .like_icon{
+  width: 18px
+}
+
+.article-img{
+  width: 100%
+}
+
+body{
+  background: #333;
+  font-family: arial;
+}
+
+article {
+  background: #fff;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 12px;
+}
+</style>
+
+<script>
+    let $likeIcon = document.getElementById('like_icon')
+let $likeCount = document.getElementById('like_count')
+let count = 0
+
+$likeIcon.addEventListener('click',function() {
+  count = count + 1
+  $likeCount.innerHTML = count
+})
+
+
+</script>
+
+</html>
